@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        // For TypeScript <= 4.5.x, you will need to specify the path to the vexflow entry file.
+        "paths": {
+            // Choose one of the options below to customize the number of fonts that will be statically compiled into your entry bundle.
+            // vexflow.ts bundles all music fonts, which will result in a large entry bundle:
+            "vexflow": ["node_modules/vexflow/entry/vexflow.ts"],
+            // vexflow-xxxx.ts bundles exactly ONE of the music engraving fonts.
+            "vexflow/bravura": ["node_modules/vexflow/entry/vexflow-bravura.ts"],
+            "vexflow/gonville": ["node_modules/vexflow/entry/vexflow-gonville.ts"],
+            "vexflow/petaluma": ["node_modules/vexflow/entry/vexflow-petaluma.ts"]
+        },
+        // After TypeScript 4.6 is released, the "paths" entry above will no longer be necessary.
+        // In Typescript 4.6, when you type
+        //   import { Vex } from "vexflow"
+        // you'll get the ESM version bundled with all music fonts.
+        // In Typescript 4.6, when you type
+        //   import { Vex } from "vexflow/petaluma"
+        // you'll get the ESM version bundled with only Petaluma.
+        // The entry files are listed in node_modules/vexflow/package.json.
+        //   package.json > exports > . > import === ./build/esm/entry/vexflow.js
+        //   package.json > exports > petaluma > import === ./build/esm/entry/vexflow-petaluma.js
+        //
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "allowJs": true /* Allow javascript files to be compiled. */,
+        "sourceMap": false,
+        "outDir": "./build" /* Redirect output structure to the directory. */,
+        "declaration": false,
+        "strict": true /* Enable all strict type-checking options. */,
+        "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+        "skipLibCheck": true /* Skip type checking of declaration files. */,
+        "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
+        "alwaysStrict": true,
+        "jsx": "preserve",
+        "lib": ["dom", "es2017"],
+        "noImplicitThis": true,
+        "removeComments": true
+    },
+    "files": ["app.ts"]
+}

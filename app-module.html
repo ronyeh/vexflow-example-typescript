@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- 
+    1) npm install
+       npm install https://vexflow-demo.surge.sh/4.0.0-beta.tgz
+    2) Since this example uses a script tag with type="module", you will need to start a web server to see the output.
+       For example, use `npx http-server` and navigate to http://localhost:8080/app-module.html
+-->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <style>
+            html {
+                font: 16px "Helvetica Neue", Arial, sans-serif;
+            }
+            body {
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            This page loads the app bundle in build/app.js. Since this example uses a script tag with type="module", you will need to start a web server to see the output. For example, use
+            <b>npx http-server</b> and navigate to <a href="http://localhost:8080/app-module.html">http://localhost:8080/app-module.html</a>
+        </p>
+        <button id="button" onclick="if (typeof pickRandomFont !== 'undefined') pickRandomFont()">Choose a Random Font</button>
+        <p id="font-name"></p>
+        <div id="output"></div>
+        <script src="build/app.js" type="module"></script>
+    </body>
+</html>
