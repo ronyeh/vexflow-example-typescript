@@ -5,11 +5,15 @@
         "paths": {
             // Choose one of the options below to customize the number of fonts that will be statically compiled into your entry bundle.
             // vexflow.ts bundles all music fonts, which will result in a large entry bundle:
-            "vexflow": ["node_modules/vexflow/entry/vexflow.ts"], // 772 KiB
+            // "vexflow": ["node_modules/vexflow/entry/vexflow.ts"], // 772 KiB
+            "vexflow": ["node_modules/vexflow/build/esm/entry/vexflow"], // 772 KiB
             // vexflow-xxxx.ts bundles exactly ONE of the music engraving fonts.
-            "vexflow/bravura": ["node_modules/vexflow/entry/vexflow-bravura.ts"], // 486 KiB
-            "vexflow/gonville": ["node_modules/vexflow/entry/vexflow-gonville.ts"], // 439 KiB
-            "vexflow/petaluma": ["node_modules/vexflow/entry/vexflow-petaluma.ts"] // 460 KiB
+            // "vexflow/bravura": ["node_modules/vexflow/entry/vexflow-bravura.ts"], // 486 KiB
+            "vexflow/bravura": ["node_modules/vexflow/entry/vexflow-bravura"], // 486 KiB
+            // "vexflow/gonville": ["node_modules/vexflow/entry/vexflow-gonville.ts"], // 439 KiB
+            "vexflow/gonville": ["node_modules/vexflow/entry/vexflow-gonville"], // 439 KiB
+            // "vexflow/petaluma": ["node_modules/vexflow/entry/vexflow-petaluma.ts"] // 460 KiB
+            "vexflow/petaluma": ["node_modules/vexflow/entry/vexflow-petaluma"] // 460 KiB
         },
         // After TypeScript 4.6 is released, the "paths" entry above will no longer be necessary.
         // In Typescript 4.6, when you type
