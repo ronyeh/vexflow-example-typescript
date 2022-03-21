@@ -1,7 +1,7 @@
 // Option 1: Import the default bundle with all three music engraving fonts.
 // Vex can be imported either via the default export or via named export of the "vexflow" module.
 // import Vex, { Flow, Factory, Stave, EasyScore } from "vexflow";
-// import { Vex, Flow, Factory, Stave, EasyScore } from "vexflow"; // 791 KB
+import { Vex, Flow, Factory, Stave, EasyScore } from "vexflow"; // 791 KB
 // Option 2: Use one of the import paths below to create a smaller bundle.
 // Each path maps to a different entry file in the vexflow npm package.
 // import { Vex, Flow, Factory, Stave, EasyScore } from "vexflow/bravura";
