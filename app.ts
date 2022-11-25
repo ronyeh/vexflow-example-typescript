@@ -14,12 +14,13 @@ import { Vex, Flow, Factory, Stave, EasyScore } from "vexflow"; // 791 KB
 // See: https://github.com/microsoft/TypeScript/issues/33079#issuecomment-992768515
 // See: https://github.com/microsoft/TypeScript/issues/33079#issuecomment-986107078
 
+const fonts = ["Bravura", "Gonville", "Petaluma", "Leland"];
+
 function chooseRandomFont() {
     const randomFontName = fonts[Math.floor(Math.random() * fonts.length)];
     Flow.setMusicFont(randomFontName);
     return randomFontName;
 }
-const fonts = ["Bravura", "Gonville", "Petaluma"];
 
 (window as any).pickRandomFont = () => {
     const fontName = chooseRandomFont();
