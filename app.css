@@ -1,6 +1,9 @@
 html {
-    font: 16px "Helvetica Neue", Arial, sans-serif;
+    font:
+        18px "Helvetica Neue",
+        Arial,
+        sans-serif;
 }
 body {
-    margin: 20px;
+    margin: 30px 20px;
 }

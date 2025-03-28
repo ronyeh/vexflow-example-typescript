@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<!-- 
+<!doctype html>
+<!--
     1) npm install
        npm install https://vexflow-demo.surge.sh/4.0.0-beta.tgz
     2) Open this file from the local filesystem with your web browser.
@@ -11,8 +11,13 @@
         <link rel="stylesheet" href="./app.css" />
     </head>
     <body>
-        <p>This page loads the full app bundle in build/app.js. <br />It works when you use: <b>npm run webpack</b> or <b>npm run esbuild</b></p>
-        <button id="button" onclick="if (typeof pickRandomFont !== 'undefined') pickRandomFont()">Choose a Random Font</button>
+        <p>
+            This page loads the full app bundle in build/app.js. <br />It works when you use: <b>npm run webpack</b> or
+            <b>npm run esbuild</b>
+        </p>
+        <button id="button" onclick="if (typeof pickRandomFont !== 'undefined') pickRandomFont()">
+            Choose a Random Font
+        </button>
         <p id="font-name"></p>
         <div id="output"></div>
         <script src="build/app.js"></script>
